@@ -1,0 +1,29 @@
+//write a Choose a file to upload functioon
+function fileUpload() {
+    var file = document.getElementById("file").files[0];
+    var reader = new FileReader();
+    reader.onload = function (e) {
+        var contents = e.target.result;
+        var lines = contents.split("
+
+");
+        for (var i = 0; i < lines.length; i++) {
+            var line = lines[i];
+            //do something with the line
+        }
+    };
+    reader.readAsText(file);
+}
+
+//write a function to upload a file to the server
+function uploadFile() {
+    var file = document.getElementById("file").files[0];
+    var reader = new FileReader();
+    reader.onload = function (e) {
+        var contents = e.target.result;
+        var lines = contents.split("
+
+");
+        for (var i = 0; i < lines.length; i++) {
+            var line = lines[i
+
